@@ -18,8 +18,7 @@ const MeditationScreen = ({navigation})=>{
     const [loading,setLoading] = useState(false)
     const [MiniCardData, setMiniCard] = useState([]) 
     const fetchData = () =>{
-        // `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=AIzaSyDOAJOppYUy5HxbXlBg-feDfpsoT6Pr6M4`
-        const fetchURL = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=%225%20minute%20meditation%22&type=video&key=AIzaSyDOAJOppYUy5HxbXlBg-feDfpsoT6Pr6M4"
+        const fetchURL = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=%225%20minute%20meditation%22&type=video&key=INSERT API KEY"
         setLoading(true)
         fetch(fetchURL)
         .then(res=>{
