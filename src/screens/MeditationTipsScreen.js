@@ -29,7 +29,7 @@ const MeditationTipsScreen = () => {
 
   const fetchMentalHealthArticles = async () => {
     try {
-      const apiKey = '97d7c90fdae646f1a5409942c6df3dbf';
+      const apiKey = 'INSERT API KEY';
       const apiUrl = `https://newsapi.org/v2/everything?q=mental%20health&apiKey=${apiKey}`;
       const response = await axios.get(apiUrl);
       if (response.data?.articles) {
